@@ -9,9 +9,9 @@ $(document).ready(function() {
 	});
 	
 	$('#button2').click(function() {
-		$('#button1').addClass('green');
-		$('#button2').addClass('blue');
-		$('#button3').addClass('yellow');
+		$('#button1').css('color','green');
+		$('#button2').css('color','blue');
+		$('#button3').css('color','yellow');
 		$('h1').css('font-family','Verdana, sans-serif');
 	});
 	
