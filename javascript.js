@@ -1,11 +1,9 @@
 $(document).ready(function() {
 	
 	$('#button1').click(function() {
-		$('img').toggle(function() {
-		$('img').attr('src','images/turnoff.png');
-	}, function() {
-		$('img').attr('src','images/turnon.png');
-	})
+		var current = $('img').attr('src');
+		var swap = $('img').attr('data-swap');
+		$('img').attr('src', swap).attr('data-swap',current);
 	});
 	
 	$('#button2').click(function() {
